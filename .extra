@@ -1,0 +1,98 @@
+# CODE FONT
+# http://input.fontbureau.com/download/index.html?customize&fontSelection=whole&a=0&g=0&i=topserif&l=serif&zero=slash&asterisk=0&braces=straight&preset=default&line-height=1.2
+
+# ------------------------------------
+# EXPORTS
+# ------------------------------------
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+. "$(brew --prefix nvm)/nvm.sh"
+[ -s "$NVM_DIR/nvm.sh"  ] && . "$NVM_DIR/nvm.sh"
+
+# ------------------------------------
+# GIT
+# ------------------------------------
+
+GIT_AUTHOR_NAME="Jamie Mason"
+GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+git config --global user.name "$GIT_AUTHOR_NAME"
+GIT_AUTHOR_EMAIL="jamie@foldleft.io"
+GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+git config --global user.email "$GIT_AUTHOR_EMAIL"
+git config --global core.editor "subl -w"
+
+# ------------------------------------
+# ALIASES
+# ------------------------------------
+
+# Misc
+alias kill-chrome-tabs="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
+alias list="tree -L 1 --dirsfirst -i"
+alias npmb="npm run build"
+alias npmd="npm install --save --save-exact"
+alias npmdd="npm install --save-dev --save-exact"
+alias npml="npm run lint --loglevel silent"
+alias npmls="npm ls --s --depth=0"
+alias npms="npm start"
+alias npmt="npm test"
+alias osx-update="sudo softwareupdate -iva"
+alias osx-updates="sudo softwareupdate -l"
+alias pbformat="pbpaste | js-beautify | pbcopy"
+
+# ------------------------------------
+# Git Aliases
+# ------------------------------------
+
+# stage files
+alias ga='git add -A'
+# list all local and remote branches
+alias gb='git fetch && git branch -a'
+# delete local branch, eg. `gbd quicktest`
+alias gbd='git branch -D'
+# delete remote branch, eg. `gbdr quicktest`
+alias gbdr='git push origin --delete --no-verify'
+# delete local and remote branch
+alias gbda='gbd && gbdr'
+# list latest remote branches
+alias gbl='git for-each-ref --sort=-committerdate refs/remotes/ --format="%(HEAD) %(color:yellow)%(refname:short)%(color:reset)|%(color:red)%(objectname:short)%(color:reset)|%(contents:subject)|%(authorname)|%(color:green)%(committerdate:relative)%(color:reset)" | column -t -s "|"'
+# create a new branch, eg. `gbn feature_pmpsht`
+alias gbn='git checkout -b'
+# eg `gc master`
+alias gc='git checkout'
+# eg `gcm 'fixed stuff'`
+alias gcm='git commit -m'
+# look for changes to remote branches
+alias gf='git fetch --prune'
+# search code in git history
+alias git-search='git log -p | grep --context=4'
+# show the commit history
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+# grep git log
+alias glfm="gl | grep"
+# parseable git log
+alias glp="git log --pretty=format:'%h|%s|%an' --abbrev-commit"
+# short commit history
+alias gls="gl --max-count=15 --no-merges"
+# eg `gm develop`
+alias gm='git merge --no-ff'
+# eg `gpl develop`
+alias gpl='git pull origin --tags'
+# eg `gps develop`
+alias gps='git push origin --tags'
+# eg `gr develop`
+alias gr='git rebase'
+# show all (un)staged and untracked files
+alias gs='git status'
+# undo
+alias gu='git reset --hard && git clean -df'
+
+# ------------------------------------
+# FUNCTIONS
+# ------------------------------------
+
+# create a file and parent directories
+# mkfile "foo/bar/baz.txt"
+function mkfile() {
+  mkdir -p -- $(dirname "$1") && touch -- "$1"
+}
