@@ -42,7 +42,50 @@ brew install homebrew/dupes/openssh
 brew install homebrew/dupes/screen
 
 # Install other useful binaries.
+brew install git
+brew install nvm
 brew install tree
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+# install latest LTS node
+nvm install --lts
+sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
+
+# install cask
+brew install caskroom/cask/brew-cask
+brew tap caskroom/versions
+
+# Install useful casks.
+brew cask install alfred
+brew cask install caffeine
+brew cask install charles
+brew cask install cheatsheet
+brew cask install cleanmymac
+brew cask install dash
+brew cask install dashlane
+brew cask install dropbox
+brew cask install firefox
+brew cask install flux
+brew cask install franz
+brew cask install gitup
+brew cask install google-chrome
+brew cask install imagealpha
+brew cask install imageoptim
+brew cask install iterm2-beta
+brew cask install lastfm
+brew cask install macdown
+brew cask install macpaw-gemini
+brew cask install opera
+brew cask install shades
+brew cask install skype
+brew cask install slowy
+brew cask install spectacle
+brew cask install spotify
+brew cask install sublime-text
+brew cask install tower
+brew cask install virtualbox
+
+# Remove outdated versions from the cask cellar.
+brew cask cleanup
