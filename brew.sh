@@ -2,6 +2,9 @@
 
 # Install command-line tools using Homebrew.
 
+# install homebrew
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 # Make sure we’re using the latest Homebrew.
 brew update
 
@@ -50,6 +53,10 @@ brew install tree
 brew cleanup
 
 # install latest LTS node
+export NVM_DIR="$HOME/.nvm"
+. "$(brew --prefix nvm)/nvm.sh"
+[ -s "$NVM_DIR/nvm.sh"  ] && . "$NVM_DIR/nvm.sh"
+
 nvm install --lts
 sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
 
