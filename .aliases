@@ -152,15 +152,26 @@ alias reload="exec $SHELL -l"
 
 alias kill-chrome-tabs="ps ux | grep '[C]hrome Helper --type=renderer' | grep -v extension-process | tr -s ' ' | cut -d ' ' -f2 | xargs kill"
 alias list="tree -L 1 --dirsfirst -i"
+alias osx-update="sudo softwareupdate -iva"
+alias osx-updates="sudo softwareupdate -l"
+
+# ------------------------------------
+# npm Aliases
+# ------------------------------------
+
 alias npmb="npm run build"
 alias npmd="npm install --save --save-exact"
 alias npmdd="npm install --save-dev --save-exact"
+alias npmg="npm install -g"
+alias npmgu="npm uninstall -g"
+alias npmi="npm install"
 alias npml="npm run lint --loglevel silent"
 alias npmls="npm ls --s --depth=0"
+alias npmr="npm run"
 alias npms="npm start"
-alias npmt="npm test"
-alias osx-update="sudo softwareupdate -iva"
-alias osx-updates="sudo softwareupdate -l"
+alias npmt="npm test --loglevel silent"
+alias npmu="npm uninstall --save"
+alias npmw="npm run watch"
 
 # ------------------------------------
 # Git Aliases
