@@ -8,6 +8,7 @@
     "Case Conversion",
     "Color Highlighter",
     "CSS Format",
+    "DocBlockr",
     "EditorConfig",
     "Emmet",
     "Git",
@@ -18,10 +19,13 @@
     "JSX",
     "Markdown Preview",
     "Package Control",
+    "PackageResourceViewer",
+    "Sass",
     "SideBarEnhancements",
+    "Six",
     "SublimeLinter",
     "Text Pastry",
-    "Vintageous",
+    "TypeScript",
     "WordCount"
   ]
 }
