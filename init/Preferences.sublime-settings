@@ -3,7 +3,7 @@
   "auto_match_enabled": true,
   "caret_style": "phase",
   "close_windows_when_empty": false,
-  "color_scheme": "Packages/ayu/ayu.tmTheme",
+  "color_scheme": "Packages/ayu/ayu-dark.tmTheme",
   "copy_with_empty_selection": false,
   "default_line_ending": "system",
   "detect_indentation": false,
@@ -28,6 +28,9 @@
   "find_selected_text": true,
   "folder_exclude_patterns": [
     ".git",
+    "_site",
+    "coverage",
+    "dist",
     "node_modules"
   ],
   "font_face": "Operator Mono Light",
@@ -62,7 +65,7 @@
   "scroll_past_end": true,
   "scroll_speed": 5.0,
   "show_full_path": true,
-  "theme": "ayu.sublime-theme",
+  "theme": "ayu-dark.sublime-theme",
   "translate_tabs_to_spaces": true,
   "trim_automatic_white_space": true,
   "trim_trailing_white_space_on_save": true,
