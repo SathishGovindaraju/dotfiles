@@ -193,6 +193,8 @@ alias gbl='git for-each-ref --sort=-committerdate refs/remotes/ --format="%(HEAD
 alias gbn='git checkout -b'
 # eg `gc master`
 alias gc='git checkout'
+# amend previous commit
+alias gca='git commit --amend'
 # eg `gcm 'fixed stuff'`
 alias gcm='git commit -m'
 # look for changes to remote branches
