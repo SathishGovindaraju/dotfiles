@@ -213,8 +213,12 @@ alias gls="gl --max-count=15 --no-merges"
 alias gm='git merge --no-ff'
 # eg `gpl develop`
 alias gpl='git pull origin --tags'
+alias gpld='gpl develop'
+alias gplm='gpl master'
 # eg `gps develop`
 alias gps='git push origin --tags'
+alias gpsd='gps develop'
+alias gpsm='gps master'
 # eg `gr develop`
 alias gr='git rebase'
 # show all (un)staged and untracked files
