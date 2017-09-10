@@ -57,8 +57,10 @@ export NVM_DIR="$HOME/.nvm"
 . "$(brew --prefix nvm)/nvm.sh"
 [ -s "$NVM_DIR/nvm.sh"  ] && . "$NVM_DIR/nvm.sh"
 
-nvm install --lts
+nvm install 4.8.4
+nvm alias default 4.8.4
 sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
+npm i -g npm
 
 # install cask
 brew install caskroom/cask/brew-cask
