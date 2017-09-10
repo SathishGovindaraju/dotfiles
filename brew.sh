@@ -68,13 +68,14 @@ brew tap caskroom/versions
 
 # Install useful casks.
 brew cask install alfred
+brew cask install bitbar
 brew cask install caffeine
 brew cask install charles
 brew cask install cheatsheet
 brew cask install cleanmymac
+brew cask install codekit
 brew cask install dash
 brew cask install dashlane
-brew cask install dropbox
 brew cask install firefox
 brew cask install flux
 brew cask install franz
@@ -83,18 +84,19 @@ brew cask install google-chrome
 brew cask install imagealpha
 brew cask install imageoptim
 brew cask install iterm2-beta
-brew cask install lastfm
+brew cask install libreoffice
 brew cask install macdown
-brew cask install macpaw-gemini
 brew cask install opera
 brew cask install shades
 brew cask install skype
 brew cask install slowy
 brew cask install spectacle
 brew cask install spotify
-brew cask install sublime-text
+brew cask install sublime-text-dev
 brew cask install tower
+brew cask install ui-browser
 brew cask install virtualbox
+brew cask install visual-studio-code
 
 # Remove outdated versions from the cask cellar.
 brew cask cleanup
