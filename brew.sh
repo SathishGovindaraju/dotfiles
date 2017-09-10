@@ -62,6 +62,15 @@ nvm alias default 4.8.4
 sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
 npm i -g npm
 
+# Install useful global npm packages.
+npm i -g commit-release
+npm i -g fixpack
+npm i -g http-server
+npm i -g lebab
+npm i -g npm-check-updates
+npm i -g prettier
+npm i -g rimraf
+
 # install cask
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
