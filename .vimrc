@@ -1,7 +1,7 @@
-" Use the Solarized Dark theme
+" Use the Ayu Dark theme
 set background=dark
-colorscheme solarized
-let g:solarized_termtrans=1
+colorscheme ayu
+let g:ayu_termtrans=1
 
 " Make Vim more useful
 set nocompatible
