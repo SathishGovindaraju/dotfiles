@@ -259,7 +259,7 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 
 # Enable the MacBook Air SuperDrive on any Mac
-sudo nvram boot-args="mbasd=1"
+# sudo nvram boot-args="mbasd=1"
 
 # Show the ~/Library folder
 chflags nohidden ~/Library
@@ -703,9 +703,9 @@ defaults write com.operasoftware.OperaDeveloper PMPrintingExpandedStateForPrint2
 wget --output-document="~/Library/Application\ Support/Sublime\ Text\ 3/Installed\ Packages" https://packagecontrol.io/Package%20Control.sublime-package
 
 # Install Sublime Text settings
-cp -r init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text*\ 3/Packages/User/Preferences.sublime-settings 2> /dev/null
+cp -r init/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Preferences.sublime-settings 2> /dev/null
 cp -r init/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Package\ Control.sublime-settings 2> /dev/null
-cp -r init/Default\ (OSX).sublime-keymap ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Default\ (OSX).sublime-keymap 2> /dev/null
+cp -r init/Default\ \(OSX\).sublime-keymap ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/Default\ \(OSX\).sublime-keymap 2> /dev/null
 
 ###############################################################################
 # Twitter.app                                                                 #
