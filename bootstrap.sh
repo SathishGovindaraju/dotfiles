@@ -12,8 +12,8 @@ function doIt() {
 		--exclude "README.md" \
 		--exclude "LICENSE-MIT.txt" \
 		-avh --no-perms . ~;
-  ~/dotfiles/brew.sh && \
-  ~/dotfiles/.macos && \
+  ./brew.sh && \
+  ./.macos && \
   source ~/.bash_profile;
 }
 
