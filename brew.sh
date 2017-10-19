@@ -101,7 +101,6 @@ brew cask install skype
 brew cask install slowy
 brew cask install spectacle
 brew cask install spotify
-brew cask install sublime-text-dev
 brew cask install tower
 brew cask install ui-browser
 brew cask install virtualbox
@@ -109,3 +108,22 @@ brew cask install visual-studio-code
 
 # Remove outdated versions from the cask cellar.
 brew cask cleanup
+
+# Install VS Code Extensions
+code --install-extension akamud.vscode-caniuse
+code --install-extension andys8.jest-snippets
+code --install-extension auiworks.amvim
+code --install-extension cssho.vscode-svgviewer
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension dzannotti.vscode-babel-coloring
+code --install-extension eamodio.gitlens
+code --install-extension esbenp.prettier-vscode
+code --install-extension kumar-harsh.graphql-for-vscode
+code --install-extension leizongmin.node-module-intellisense
+code --install-extension ms-vscode.sublime-keybindings
+code --install-extension msjsdiag.debugger-for-chrome
+code --install-extension PKief.material-icon-theme
+code --install-extension ryanluker.vscode-coverage-gutters
+code --install-extension teabyii.ayu
+code --install-extension wix.vscode-import-cost
+code --install-extension wmaurer.change-case
