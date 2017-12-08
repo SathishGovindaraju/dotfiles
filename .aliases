@@ -162,11 +162,13 @@ alias osx-updates="sudo softwareupdate -l"
 alias npmb="npm run build"
 alias npmd="npm install --save --save-exact"
 alias npmdd="npm install --save-dev --save-exact"
+alias npmf="npm run format"
 alias npmg="npm install -g"
 alias npmgu="npm uninstall -g"
 alias npmi="npm install"
 alias npml="npm run lint --loglevel silent"
 alias npmls="npm ls --s --depth=0"
+alias npmp="npm run preview"
 alias npmr="npm run"
 alias npmrm="rm -rf ./node_modules ./package-lock.json; npm install"
 alias npms="npm start"
@@ -222,6 +224,8 @@ alias gpsd='gps develop'
 alias gpsm='gps master'
 # eg `gr develop`
 alias gr='git rebase'
+alias grd='git rebase develop'
+alias grm='git rebase master'
 # show all (un)staged and untracked files
 alias gs='git status'
 # undo
