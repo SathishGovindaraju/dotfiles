@@ -57,10 +57,10 @@ export NVM_DIR="$HOME/.nvm"
 . "$(brew --prefix nvm)/nvm.sh"
 [ -s "$NVM_DIR/nvm.sh"  ] && . "$NVM_DIR/nvm.sh"
 
-nvm install 4.8.4
-nvm alias default 4.8.4
+nvm install 6.11.0
+nvm alias default 6.11.0
 sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
-npm i -g npm
+npm i -g npm@4.6.1
 
 # Install useful global npm packages.
 npm i -g commit-release
@@ -116,14 +116,15 @@ code --install-extension auiworks.amvim
 code --install-extension cssho.vscode-svgviewer
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension dzannotti.vscode-babel-coloring
-code --install-extension eamodio.gitlens
 code --install-extension esbenp.prettier-vscode
+code --install-extension idleberg.applescript
 code --install-extension kumar-harsh.graphql-for-vscode
 code --install-extension leizongmin.node-module-intellisense
 code --install-extension ms-vscode.sublime-keybindings
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension PKief.material-icon-theme
 code --install-extension ryanluker.vscode-coverage-gutters
+code --install-extension stevejpurves.cucumber
 code --install-extension teabyii.ayu
 code --install-extension wix.vscode-import-cost
 code --install-extension wmaurer.change-case

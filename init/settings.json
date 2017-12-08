@@ -4,7 +4,7 @@
   "coverage-gutters.showRulerCoverage": false,
   "editor.fontFamily": "'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 14,
-  "editor.formatOnPaste": true,
+  "editor.formatOnPaste": false,
   "editor.formatOnSave": false,
   "editor.formatOnType": false,
   "editor.minimap.enabled": false,
@@ -14,8 +14,10 @@
   "editor.snippetSuggestions": "top",
   "editor.tabSize": 2,
   "eslint.autoFixOnSave": true,
-  "eslint.options": { "configFile": "/Users/jmn42/Dev/sp-shop/.eslintrc.json" },
+  "explorer.confirmDelete": false,
   "explorer.openEditors.visible": 0,
+  "extensions.autoUpdate": true,
+  "extensions.ignoreRecommendations": true,
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
   "prettier.printWidth": 100,
@@ -37,6 +39,7 @@
   "window.zoomLevel": 1,
   "workbench.colorTheme": "Ayu Dark",
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.panel.location": "bottom",
   "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile"
 }
