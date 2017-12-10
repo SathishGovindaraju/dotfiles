@@ -57,19 +57,23 @@ export NVM_DIR="$HOME/.nvm"
 . "$(brew --prefix nvm)/nvm.sh"
 [ -s "$NVM_DIR/nvm.sh"  ] && . "$NVM_DIR/nvm.sh"
 
-nvm install 6.11.0
-nvm alias default 6.11.0
-sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
-npm i -g npm@4.6.1
+read -p "Install node LTS and latest npm (y/n)?" CONT
+if [ "$CONT" = "y" ]; then
+  nvm install --lts --latest-npm
+  nvm alias default "$(node -v)"
+  sudo chown -R $(whoami) $(npm config get prefix)/{lib/node_modules,bin,share}
+fi
 
-# Install useful global npm packages.
-npm i -g commit-release
-npm i -g fixpack
-npm i -g http-server
-npm i -g lebab
-npm i -g npm-check-updates
-npm i -g prettier
-npm i -g rimraf
+read -p "Install useful global npm packages (y/n)?" CONT
+if [ "$CONT" = "y" ]; then
+  npm i -g commit-release
+  npm i -g fixpack
+  npm i -g http-server
+  npm i -g lebab
+  npm i -g npm-check-updates
+  npm i -g prettier
+  npm i -g rimraf
+fi
 
 # install cask
 brew install caskroom/cask/brew-cask
@@ -116,6 +120,7 @@ code --install-extension auiworks.amvim
 code --install-extension cssho.vscode-svgviewer
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension dzannotti.vscode-babel-coloring
+code --install-extension eg2.tslint
 code --install-extension esbenp.prettier-vscode
 code --install-extension idleberg.applescript
 code --install-extension kumar-harsh.graphql-for-vscode
