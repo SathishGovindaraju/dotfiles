@@ -116,18 +116,27 @@ brew cask cleanup
 # Install VS Code Extensions
 code --install-extension akamud.vscode-caniuse
 code --install-extension andys8.jest-snippets
+code --install-extension angryobject.react-pure-to-class-vscode
 code --install-extension auiworks.amvim
+code --install-extension bibhasdn.unique-lines
+code --install-extension christian-kohler.npm-intellisense
 code --install-extension cssho.vscode-svgviewer
+code --install-extension dakara.transformer
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension dzannotti.vscode-babel-coloring
+code --install-extension eamodio.gitlens
 code --install-extension eg2.tslint
 code --install-extension esbenp.prettier-vscode
+code --install-extension foxundermoon.shell-format
+code --install-extension hoovercj.vscode-power-mode
 code --install-extension idleberg.applescript
+code --install-extension kisstkondoros.vscode-codemetrics
 code --install-extension kumar-harsh.graphql-for-vscode
 code --install-extension leizongmin.node-module-intellisense
 code --install-extension ms-vscode.sublime-keybindings
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension PKief.material-icon-theme
+code --install-extension rust-lang.rust
 code --install-extension ryanluker.vscode-coverage-gutters
 code --install-extension stevejpurves.cucumber
 code --install-extension teabyii.ayu
