@@ -46,6 +46,10 @@ brew install homebrew/dupes/screen
 
 # Install other useful binaries.
 brew install git
+brew install git-extras
+brew install git-standup
+brew install hub
+brew install git-cal
 brew install nvm
 brew install tree
 
