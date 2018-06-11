@@ -88,7 +88,6 @@ brew cask install alfred
 brew cask install bitbar
 brew cask install caffeine
 brew cask install charles
-brew cask install cheatsheet
 brew cask install cleanmymac
 brew cask install codekit
 brew cask install dash
@@ -113,6 +112,17 @@ brew cask install tower
 brew cask install ui-browser
 brew cask install virtualbox
 brew cask install visual-studio-code
+
+# Install QuickLook plugins
+brew cask install qlcolorcode
+brew cask install qlstephen
+brew cask install qlmarkdown
+brew cask install quicklook-json
+brew cask install qlimagesize
+brew cask install webpquicklook
+brew cask install suspicious-package
+brew cask install quicklookase
+brew cask install qlvideo
 
 # Remove outdated versions from the cask cellar.
 brew cask cleanup
