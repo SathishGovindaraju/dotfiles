@@ -2,9 +2,9 @@
 # EXPORTS
 # ------------------------------------
 
-USER_NAME="Jamie Mason"
-USER_EMAIL="jamie@foldleft.io"
-USER_URL="https://github.com/JamieMason"
+USER_NAME="Sathish Govindaraju"
+USER_EMAIL="yash0087@gmail.com"
+USER_URL="https://github.com/SathishGovindaraju"
 
 # git
 GIT_AUTHOR_NAME="$USER_NAME"
